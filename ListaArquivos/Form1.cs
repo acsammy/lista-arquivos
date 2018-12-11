@@ -43,6 +43,8 @@ namespace ListaArquivos
                     DateTime created_at = File.GetLastWriteTime(file);
                     dgvArquivos.Rows.Add(Path.GetFileName(file), Path.GetExtension(file), sizeOfFile(file), created_at);
                 }
+
+                dgvArquivos.Sort(dgvArquivos.Columns["Column1"], ListSortDirection.Ascending);
             }
         }
 
@@ -68,6 +70,7 @@ namespace ListaArquivos
                 sqlCommand.ExecuteNonQuery();
             }
             conn.Close();
+            MessageBox.Show("Arquivos salvos com sucesso!");
         }
 
         private void Form1_Load(object sender, EventArgs e)
