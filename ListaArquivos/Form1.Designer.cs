@@ -98,6 +98,7 @@
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // Form1
             // 
@@ -109,6 +110,7 @@
             this.Controls.Add(this.dgvArquivos);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArquivos)).EndInit();
             this.ResumeLayout(false);
 
