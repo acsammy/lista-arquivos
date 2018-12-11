@@ -88,6 +88,7 @@
             this.btnOpenFolder.TabIndex = 1;
             this.btnOpenFolder.Text = "Abrir Pasta";
             this.btnOpenFolder.UseVisualStyleBackColor = true;
+            this.btnOpenFolder.Click += new System.EventHandler(this.btnOpenFolder_Click);
             // 
             // btnSalvar
             // 
